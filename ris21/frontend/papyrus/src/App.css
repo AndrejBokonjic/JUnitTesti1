@@ -1,0 +1,195 @@
+/*
+THIS IS THE GLOBAL PAGE CSS!
+For anything smaller, make a css folder inside of its respectable division.
+
+The colors follow a convention of which should be most common.
+First primary, then secondary, then tetriary.
+
+  Primary color: #41098C
+  Secondary color: #B6003D
+  Tertiary color: #074A86
+  Refer to this: https://paletton.com/#uid=54t0V0kBXpXo8t4vwtaJDn0QfjN
+
+For greys, we will use a lighter grey and darker grey.
+  Lighter grey: #333
+  Darker grey: #181a1b
+*/
+
+.primary-color {
+  color: #41098C;
+}
+
+.secondary-color {
+  color: #B6003D;
+}
+
+.tertiary-color {
+  color: #074A86;
+}
+
+.lighter-grey {
+  color: white;
+  background-color: #333;
+}
+
+.darker-grey {
+  color: white;
+  background-color: #181a1b;
+}
+
+.App {
+  text-align: center;
+  z-index: 9999;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* styles.css (or your preferred CSS file) */
+.objava-div {
+  padding: 10px; /* Adjust the padding value as needed */
+  border: 1px solid #ccc; /* Optional: Add a border for separation */
+  margin-bottom: 10px; /* Optional: Add margin at the bottom of each div */
+}
+
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.objava-div {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.objava-content {
+  flex: 1;
+  text-align: left;
+  padding: 10px;
+}
+
+.objava-buttons {
+  display: flex;
+  flex-direction: column-reverse;
+  /*justify-content: space-between;*/
+  align-items: center;
+  padding: 10px;
+}
+
+.comments-button, .grading-button {
+  background-color: #B6003D;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 10px;
+}
+
+.objava-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.objava-text {
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.objava-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.grading-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.individual-grade-button {
+  background-color: #B6003D;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+/* Add this CSS to your existing styles.css file */
+
+/* Grid container */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr; /* Adjust column widths as needed */
+  gap: 10px; /* Adjust the gap between grid items */
+}
+
+/* Grid item */
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Left container for username */
+.grid-left {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* Right container for content */
+.grid-right {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+

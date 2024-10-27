@@ -1,0 +1,76 @@
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.objava-div {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.objava-content {
+    flex: 1;
+    text-align: left;
+    padding: 10px;
+}
+
+.objava-buttons {
+    display: flex;
+    flex-direction: column-reverse;
+    /*justify-content: space-between;*/
+    align-items: center;
+    padding: 10px;
+}
+
+.comments-button, .grading-button {
+    background-color: #B6003D;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 10px;
+}
+
+.objava-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.objava-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.objava-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.grading-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.individual-grade-button {
+    background-color: #B6003D;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
