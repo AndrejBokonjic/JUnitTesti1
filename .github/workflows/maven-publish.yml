@@ -41,4 +41,4 @@ jobs:
         echo "SPRING_DATASOURCE_PASSWORD=root_password" >> $GITHUB_ENV
 
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      run: mvn -B package --file ris21/backend/pom.xml
