@@ -16,8 +16,8 @@ jobs:
         ports:
           - 3306:3306
         env:
-          MYSQL_ROOT_PASSWORD: root_password   # replace with a strong root password
-          MYSQL_DATABASE: papyrus              # test database name
+          MYSQL_ROOT_PASSWORD: root_password  
+          MYSQL_DATABASE: papyrus            
         options: >-
           --health-cmd="mysqladmin ping --silent"
           --health-interval=10s
