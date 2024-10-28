@@ -18,8 +18,6 @@ jobs:
         env:
           MYSQL_ROOT_PASSWORD: root_password   # replace with a strong root password
           MYSQL_DATABASE: papyrus              # test database name
-          MYSQL_USER: root                # test database username
-          MYSQL_PASSWORD: root_password        # test database password
         options: >-
           --health-cmd="mysqladmin ping --silent"
           --health-interval=10s
@@ -39,8 +37,8 @@ jobs:
     - name: Set up database environment variables
       run: |
         echo "SPRING_DATASOURCE_URL=jdbc:mysql://localhost:3306/papyrus?useSSL=false&serverTimezone=UTC" >> $GITHUB_ENV
-        echo "SPRING_DATASOURCE_USERNAME=test_user" >> $GITHUB_ENV
-        echo "SPRING_DATASOURCE_PASSWORD=test_password" >> $GITHUB_ENV
+        echo "SPRING_DATASOURCE_USERNAME=root" >> $GITHUB_ENV
+        echo "SPRING_DATASOURCE_PASSWORD=root_password" >> $GITHUB_ENV
 
     - name: Build with Maven
       run: mvn -B package --file pom.xml
