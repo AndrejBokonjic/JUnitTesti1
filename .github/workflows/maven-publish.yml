@@ -14,6 +14,6 @@ jobs:
         with:
           java-version: '21'
           distribution: 'temurin'
-          cache: maven
+          cache: none
       - name: Build and Test with Maven
         run: mvn -B -Dspring.profiles.active=test clean package --file ris21/backend/pom.xml
