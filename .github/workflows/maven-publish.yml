@@ -17,4 +17,3 @@ jobs:
           cache: maven
       - name: Build and Test with Maven
         run: mvn -B -Dspring.profiles.active=test clean package --file ris21/backend/pom.xml
-
